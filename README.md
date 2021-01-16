@@ -2,6 +2,10 @@
 
 > ✨ Bootstrapped with Create Snowpack App (CSA).
 
+```shell
+ yarn create snowpack-app shSnow --template @snowpack/app-template-react-typescript --use-yarn
+```
+
 ## Available Scripts
 
 ### npm start
