@@ -14,9 +14,10 @@
     ]
   },
   "scripts": {
-    "start": "concurrently \"snowpack dev\" \"electron .\"",
+    "start": "snowpack dev",
     "build": "snowpack build",
-    "build:dist": "snowpack build && electron-builder",
+    "start:el": "concurrently \"snowpack dev --open none\" \"electron .\"",
+    "build:el": "snowpack build && electron-builder",
     "build:pack": "snowpack build && electron-builder --dir",
     "test": "web-test-runner \"src/**/*.test.tsx\"",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",

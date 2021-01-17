@@ -26,7 +26,7 @@ module.exports = {
   },
   devOptions: {
     /* ... */
-    open: 'none',
+    // open: 'none',
   },
   buildOptions: {
     /* ... */
