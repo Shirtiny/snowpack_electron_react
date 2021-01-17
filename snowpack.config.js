@@ -8,7 +8,7 @@ module.exports = {
     '@snowpack/plugin-react-refresh',
     '@snowpack/plugin-dotenv',
     '@snowpack/plugin-typescript',
-    "@snowpack/plugin-babel",
+    '@snowpack/plugin-babel',
   ],
   routes: [
     /* Enable an SPA Fallback in development: */
@@ -16,16 +16,22 @@ module.exports = {
   ],
   optimize: {
     /* Example: Bundle your final build: */
-    // "bundle": true,
+    bundle: true,
+    minify: true,
+    treeshake: true,
   },
   packageOptions: {
     /* ... */
-    knownEntrypoints: ['react/jsx-runtime'],
+    // knownEntrypoints: ['react/jsx-runtime'],
   },
   devOptions: {
     /* ... */
+    open: 'none',
   },
   buildOptions: {
     /* ... */
+    out: 'build',
+    //the value of %PUBLIC_URL% , in html
+    baseUrl: './',
   },
 };

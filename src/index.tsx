@@ -15,3 +15,6 @@ ReactDOM.render(
 if (import.meta.hot) {
   import.meta.hot.accept();
 }
+
+console.log("sn:", import.meta);
+
