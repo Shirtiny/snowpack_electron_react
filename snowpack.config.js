@@ -22,7 +22,7 @@ module.exports = {
   },
   packageOptions: {
     /* ... */
-    // knownEntrypoints: ['react/jsx-runtime'],
+    knownEntrypoints: ['react/jsx-runtime'],
   },
   devOptions: {
     /* ... */

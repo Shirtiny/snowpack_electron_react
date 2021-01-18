@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import assets from "./assets"
 import './App.css';
 
 interface AppProps {}
@@ -15,7 +16,7 @@ function App({}: AppProps) {
   return (
     <div className="App">
       <header className="App-header">
-        <img src="./logo.svg" className="App-logo" alt="logo" />
+        <img src={assets.img.logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
